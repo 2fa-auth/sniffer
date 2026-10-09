@@ -27,14 +27,14 @@ sudo ./net-analyzer
 ## тестовый инструмент
 В папке `tools/` находится `synsend` — утилита для отправки SYN-пакета. Используется для проверки работоспособности сниффера.
 
-### компиляция клиента (synend)
+### компиляция synend
 
 ```bash
 cd tools
 gcc -o synsend synsend.c -lnet
 ```
 
-### зависимости для synsend
+### зависимости synsend
 - libnet (`brew install libnet` на macOS, `sudo apt-get install libnet-dev` на Linux)
 
 2. В другом терминале отправить тестовый SYN: `sudo ./tools/synsend 93.184.216.34 80`
